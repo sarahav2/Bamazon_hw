@@ -40,3 +40,5 @@ BamazonCustomer.js
 
 #Authors
 * Sarah Avwata  
+
+![alt text](/images/bamazon.gif)
