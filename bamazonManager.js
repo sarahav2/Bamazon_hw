@@ -47,3 +47,22 @@ function viewProducts(){
     start();
     });
   }
+
+  //views low inventory
+function viewLowInventory(){
+    console.log('>>>>>>Viewing Low Inventory<<<<<<');
+  
+    connection.query('SELECT * FROM Products', function(err, res){
+    if(err) throw err;
+    console.log('----------------------------------------------------------------------------------------------------')
+  
+    for(var i = 0; i<res.length;i++){
+      if(res[i].StockQuantity <= 5){
+      console.log("ID: " + res[i].ItemID + " | " + "Product: " + res[i].ProductName + " | " + "Department: " + res[i].DepartmentName + " | " + "Price: " + res[i].Price + " | " + "QTY: " + res[i].StockQuantity);
+      console.log('--------------------------------------------------------------------------------------------------');
+      }
+    }
+  
+    start();
+    });
+  }
