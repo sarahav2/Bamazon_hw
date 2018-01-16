@@ -30,3 +30,20 @@ function start(){
       }
     });
   }
+
+  //views all inventory
+function viewProducts(){
+    console.log('>>>>>>Viewing Products<<<<<<');
+  
+    connection.query('SELECT * FROM Products', function(err, res){
+    if(err) throw err;
+    console.log('----------------------------------------------------------------------------------------------------')
+  
+    for(var i = 0; i<res.length;i++){
+      console.log("ID: " + res[i].ItemID + " | " + "Product: " + res[i].ProductName + " | " + "Department: " + res[i].DepartmentName + " | " + "Price: " + res[i].Price + " | " + "QTY: " + res[i].StockQuantity);
+      console.log('--------------------------------------------------------------------------------------------------')
+    }
+  
+    start();
+    });
+  }
