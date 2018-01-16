@@ -60,3 +60,4 @@ The goal was to create an Amazon-like store front using Node.js and MySQL.
 * Sarah Avwata  
 
 ![alt text](/images/bamazon.gif)
+![alt text](/images/bamazon2.gif)
