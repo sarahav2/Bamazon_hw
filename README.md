@@ -1,16 +1,16 @@
 # Bamazon_hw
 The goal was to create an Amazon-like store front using Node.js and MySQL.
 
-#Getting Started
+# Getting Started
 * Clone repo.
 * Run command in Terminal or Gitbash 'npm install'
 * Run command depending which mode you would like to be on:
    * Customer - 'npm run customer'
    * Manager - 'npm run manager'
 
-Run 'ctrl + c' to exit each mode
+   * Run 'ctrl + c' to exit each mode
 
-##What Each JavaScript Does
+## What Each JavaScript Does
 BamazonCustomer.js
 
 * Prints the products in the store.
@@ -24,21 +24,21 @@ BamazonCustomer.js
      * If the purchase goes through, it updates the stock quantity to reflect the purchase.
      * It will also update the product sales in the department table.
 
-#Technologies used
+# Technologies used
  * Node.js
  * Inquire NPM Package (https://www.npmjs.com/package/inquirer)
  * MYSQL NPM Package (https://www.npmjs.com/package/mysql)
 
-##Prerequisites
+## Prerequisites
 - Node.js - Download the latest version of Node https://nodejs.org/en/
 - Create a MYSQL database called 'Bamazon', reference schema.sql
 
-#Built With
+# Built With
 * Sublime Text - Text Editor
 * MySQLWorkbench
 * Terminal/Gitbash
 
-#Authors
+# Authors
 * Sarah Avwata  
 
 ![alt text](/images/bamazon.gif)
